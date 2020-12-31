@@ -12,7 +12,7 @@ class CBSampleViewController: UIViewController {
 
     var lblTitle: UILabel = {
         var label = UILabel()
-        label.textColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
+        label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         label.font = UIFont.systemFont(ofSize: 55.0, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -20,7 +20,8 @@ class CBSampleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.1333333333, blue: 0.1333333333, alpha: 1)
+//        view.backgroundColor = .red
         lblTitle.text = tabBarItem.title
         view.addSubview(lblTitle)
 
@@ -28,10 +29,15 @@ class CBSampleViewController: UIViewController {
         lblTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         view.setNeedsLayout()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = #colorLiteral(red: 0.1333333333, green: 0.1333333333, blue: 0.1333333333, alpha: 1)
+    }
 
     func inverseColor() {
         view.backgroundColor = lblTitle.textColor
-        lblTitle.textColor = UIColor.white
+//        lblTitle.textColor = UIColor.white
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

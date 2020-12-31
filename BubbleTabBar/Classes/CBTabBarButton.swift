@@ -77,10 +77,10 @@ public class CBTabBarButton: UIControl {
     override public var tintColor: UIColor! {
         didSet {
             if _isSelected {
-                tabImage.tintColor = tintColor
+                tabImage.tintColor = .white//tintColor
             }
-            tabLabel.textColor = tintColor
-            tabBg.backgroundColor = tintColor.withAlphaComponent(0.2)
+            tabLabel.textColor = .white//tintColor
+            tabBg.backgroundColor = tintColor.withAlphaComponent(1.0)
         }
     }
 
@@ -88,7 +88,7 @@ public class CBTabBarButton: UIControl {
     private var tabLabel = UILabel()
     private var tabBg = UIView()
 
-    private let bgHeight: CGFloat = 42.0
+    private let bgHeight: CGFloat = 48.0//42.0
     private var csFoldedBgTrailing: NSLayoutConstraint!
     private var csUnfoldedBgTrailing: NSLayoutConstraint!
     private var csFoldedLblLeading: NSLayoutConstraint!
@@ -107,7 +107,7 @@ public class CBTabBarButton: UIControl {
         tabImage.contentMode = .center
         tabImage.translatesAutoresizingMaskIntoConstraints = false
         tabLabel.translatesAutoresizingMaskIntoConstraints = false
-        tabLabel.font = UIFont.systemFont(ofSize: 14)
+        tabLabel.font = UIFont(name: "Gilroy-Medium", size: 13.0)!//UIFont.systemFont(ofSize: 30.0)//UIFont(name: "Gilroy-Medium", size: 20.0)
         tabLabel.adjustsFontSizeToFitWidth = true
         tabBg.translatesAutoresizingMaskIntoConstraints = false
         tabBg.isUserInteractionEnabled = false
@@ -157,7 +157,7 @@ public class CBTabBarButton: UIControl {
             self.tabLabel.alpha = 0.0
         }
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
-            self.tabImage.tintColor = .black
+            self.tabImage.tintColor = #colorLiteral(red: 0.5294117647, green: 0.5294117647, blue: 0.5294117647, alpha: 1)//.white//.black
         }, completion: nil)
 
     }
@@ -172,7 +172,7 @@ public class CBTabBarButton: UIControl {
             self.tabLabel.alpha = 1.0
         }, completion: nil)
         UIView.transition(with: tabImage, duration: duration, options: [.transitionCrossDissolve], animations: {
-            self.tabImage.tintColor = self.tintColor
+            self.tabImage.tintColor = .white//self.tintColor
         }, completion: nil)
     }
 

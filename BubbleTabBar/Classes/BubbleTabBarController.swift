@@ -74,6 +74,11 @@ open class BubbleTabBarController: UITabBarController {
 
     open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+//        updateTabBarFrame()
+    }
+    
+    open override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         updateTabBarFrame()
     }
 

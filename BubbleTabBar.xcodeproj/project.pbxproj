@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8669E9A225963DCF0082E8C2 /* gilroy_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8669E9A125963DCF0082E8C2 /* gilroy_medium.ttf */; };
+		8669E9A32596547A0082E8C2 /* gilroy_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8669E9A125963DCF0082E8C2 /* gilroy_medium.ttf */; };
+		8669E9A52596559F0082E8C2 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8669E9A42596559F0082E8C2 /* HomeTabBarController.swift */; };
+		8669E9A725965AB90082E8C2 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8669E9A625965AB90082E8C2 /* NewsViewController.swift */; };
 		CEA25522220D8BB500420609 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA25520220D8BB500420609 /* LaunchScreen.storyboard */; };
 		CECEA1D821B6767100F15B7A /* BubbleTabBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECEA1D121B6767100F15B7A /* BubbleTabBar.framework */; };
 		CECEA1D921B6767100F15B7A /* BubbleTabBar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CECEA1D121B6767100F15B7A /* BubbleTabBar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -46,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8669E9A125963DCF0082E8C2 /* gilroy_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gilroy_medium.ttf; sourceTree = "<group>"; };
+		8669E9A42596559F0082E8C2 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		8669E9A625965AB90082E8C2 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		CEA25521220D8BB500420609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECEA1A621B6758200F15B7A /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECEA1D121B6767100F15B7A /* BubbleTabBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BubbleTabBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +115,7 @@
 		CECEA1D221B6767100F15B7A /* BubbleTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				8669E9A125963DCF0082E8C2 /* gilroy_medium.ttf */,
 				CECEA1EF21B676FF00F15B7A /* Assets */,
 				CECEA1F121B676FF00F15B7A /* Classes */,
 				CECEA1D421B6767100F15B7A /* Info.plist */,
@@ -126,6 +134,8 @@
 				CECEA1E521B676D000F15B7A /* AppDelegate.swift */,
 				CECEA1E621B676D000F15B7A /* CBSampleViewController.swift */,
 				CECEA1E721B676D000F15B7A /* Info.plist */,
+				8669E9A42596559F0082E8C2 /* HomeTabBarController.swift */,
+				8669E9A625965AB90082E8C2 /* NewsViewController.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8669E9A32596547A0082E8C2 /* gilroy_medium.ttf in Resources */,
 				CEA25522220D8BB500420609 /* LaunchScreen.storyboard in Resources */,
 				CECEA1EB21B676D000F15B7A /* Images.xcassets in Resources */,
 				CECEA1EA21B676D000F15B7A /* Main.storyboard in Resources */,
@@ -262,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8669E9A225963DCF0082E8C2 /* gilroy_medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +296,8 @@
 			files = (
 				CECEA20321B676FF00F15B7A /* BubbleTabBarController.swift in Sources */,
 				CECEA20221B676FF00F15B7A /* CBTabBarButton.swift in Sources */,
+				8669E9A52596559F0082E8C2 /* HomeTabBarController.swift in Sources */,
+				8669E9A725965AB90082E8C2 /* NewsViewController.swift in Sources */,
 				CECEA20121B676FF00F15B7A /* BubbleTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,19 +18,30 @@ class ViewController: UIViewController {
 
     @IBAction func btnFromCodePressed(_ sender: AnyObject) {
         let eventsVC = CBSampleViewController()
-        eventsVC.tabBarItem = UITabBarItem(title: "Events", image: #imageLiteral(resourceName: "dashboard"), tag: 0)
+        eventsVC.tabBarItem = UITabBarItem(title: "News", image: UIImage(named: "News"), tag: 0)
+        eventsVC.tabBarItem.selectedImage =  UIImage(named: "NewsSelected")
+        eventsVC.inverseColor()
         let searchVC = CBSampleViewController()
-        searchVC.tabBarItem = UITabBarItem(title: "Search", image: #imageLiteral(resourceName: "clock"), tag: 0)
+        searchVC.tabBarItem = UITabBarItem(title: "Training", image: UIImage(named: "Training"), tag: 0)
+        searchVC.tabBarItem.selectedImage =  UIImage(named: "TrainingSelected")
         let activityVC = CBSampleViewController()
-        activityVC.tabBarItem = UITabBarItem(title: "Activity", image: #imageLiteral(resourceName: "folder"), tag: 0)
+        activityVC.tabBarItem = UITabBarItem(title: "Live", image: UIImage(named: "Live"), tag: 0)
+        activityVC.tabBarItem.selectedImage =  UIImage(named: "LiveSelected")
         let settingsVC = CBSampleViewController()
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "menu"), tag: 0)
-        settingsVC.tabBarItem.selectedImage = #imageLiteral(resourceName: "clock")
-        settingsVC.inverseColor()
+        settingsVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(named: "Profile"), tag: 0)
+        settingsVC.tabBarItem.selectedImage =  UIImage(named: "ProfileSelected")
 
         let tabBarController = BubbleTabBarController()
         tabBarController.viewControllers = [eventsVC, searchVC, activityVC, settingsVC]
-        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.1579992771, green: 0.1818160117, blue: 0.5072338581, alpha: 1)
+//        tabBarController.tabBar.select
+//        if #available(iOS 10.0, *) {
+//            tabBarController.tabBar.unselectedItemTintColor = UIColor.white
+//        } else {
+//            // Fallback on earlier versions
+//        }
+        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.1333333333, green: 0.1333333333, blue: 0.1333333333, alpha: 1)
+//        tabBarController.tabBar.tintColor = .red
+        tabBarController.tabBar.barTintColor = #colorLiteral(red: 0.1333333333, green: 0.1333333333, blue: 0.1333333333, alpha: 1)
         self.navigationController?.pushViewController(tabBarController, animated: true)
     }
 
